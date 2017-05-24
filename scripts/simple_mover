@@ -15,7 +15,6 @@ def mover():
 
     while not start_time:
         start_time = rospy.Time.now().to_sec()
-        rate.sleep()
 
     while not rospy.is_shutdown():
         elapsed = rospy.Time.now().to_sec() - start_time
