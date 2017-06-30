@@ -47,14 +47,10 @@ def move_arm(pos_j1, pos_j2):
     return time_elapsed
 
 def handle_safe_move_request(req):
-
-    time_elapsed = rospy.Time.now()
-
     rospy.loginfo('GoToPositionRequest Received - j1:%s, j2:%s',
                    req.joint_1, req.joint_2)
     clamp_j1, clamp_j2 = clamp_at_boundaries(req.joint_1, req.joint_2)
-    move_arm(clamp_j1, clamp_j2)
-    time_elapsed = rospy.Time.now() - time_elapsed
+    time_elapsed = move_arm(clamp_j1, clamp_j2)
 
     return GoToPositionResponse(time_elapsed)
 
