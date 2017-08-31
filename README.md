@@ -1,7 +1,9 @@
+[![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
+
 # simple_arm
 A mini-project to better explain pub-sub architecture in ROS
 
--### How to Launch the simulation?
+### How to Launch the simulation?
 Make sure you have all the required ROS packages installed, and that this package is in your ROS workspace (assumed ot be `~/catkin_ws`.
 
 ```sh
@@ -20,6 +22,9 @@ Once the `simple_arm` package has been built, you can launch the simulation envi
 $ source ~/catkin_ws/devel/setup.bash
 $ roslaunch simple_arm robot_spawn.launch
 ```
+** Please note that if you are having trouble with roslaunch simple_arm robot_spawn.launch please try the safe_spawner.sh script in the scripts folder. You can launch by using $ ./safe_spawner.sh in a terminal of your choice **
+
+
 Robot can be controlled by publishing joint values to joint controller topics:
 
 ```
