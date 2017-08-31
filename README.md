@@ -22,7 +22,7 @@ Once the `simple_arm` package has been built, you can launch the simulation envi
 $ source ~/catkin_ws/devel/setup.bash
 $ roslaunch simple_arm robot_spawn.launch
 ```
-** Please note that if you are having trouble with roslaunch simple_arm robot_spawn.launch please try the safe_spawner.sh script in the scripts folder. You can launch by using $ ./safe_spawner.sh in a terminal of your choice **
+**Please note that if you are having trouble with roslaunch simple_arm robot_spawn.launch please try the safe_spawner.sh script in the scripts folder. You can launch by using $ ./safe_spawner.sh in a terminal of your choice**
 
 
 Robot can be controlled by publishing joint values to joint controller topics:
