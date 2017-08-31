@@ -41,7 +41,7 @@ To control joint_2:
 $ rostopic pub -1 /simple_arm/joint_2_position_controller/command std_msgs/Float64 "data: 1.5"
 ```
 
-**Note:Change the value of "data" argument to change joint_position values.**
+**Note: Change the value of "data" argument to change joint_position values.**
 
 ### How to view image stream from the camera?
 
